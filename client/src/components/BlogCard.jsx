@@ -54,14 +54,14 @@ const BlogCard = ({ props }) => {
       variants={cardVariants}
       className="h-full"
     >
-      <Link to={RouteBlogDetails(props.category.slug, props.slug)} className="h-full">
+      <Link to={RouteBlogDetails(props.category.slug, props.slug)} className="h-full" onClick={() => window.scrollTo(0, 0)}>
         <Card className="h-full pt-5 overflow-hidden transition-colors duration-300 hover:border-primary/20">
           <CardContent className="h-full flex flex-col">
             <div className='flex items-center justify-between mb-4'>
               <div className='flex items-center gap-2'>
                 <Avatar className="w-8 h-8 sm:w-10 sm:h-10">
-                  <AvatarImage 
-                    src={props.author.avatar || usericon} 
+                  <AvatarImage
+                    src={props.author.avatar || usericon}
                     alt={props.author.name}
                     className="object-cover"
                   />
@@ -77,12 +77,12 @@ const BlogCard = ({ props }) => {
               )}
             </div>
 
-            <motion.div 
+            <motion.div
               className='my-2 rounded-lg overflow-hidden'
               variants={imageVariants}
             >
-              <img 
-                src={props.featuredImage} 
+              <img
+                src={props.featuredImage}
                 alt={props.title}
                 className='w-full h-48 sm:h-56 object-cover rounded-lg'
                 loading="lazy"
@@ -94,13 +94,13 @@ const BlogCard = ({ props }) => {
                 <FaRegCalendarAlt className="text-primary" />
                 <span>{moment(props.createdAt).format('MMMM DD, YYYY')}</span>
               </p>
-              
+
               <h2 className='text-xl sm:text-2xl font-bold line-clamp-2 mb-3 text-gray-800 dark:text-gray-100'>
                 {props.title}
               </h2>
-              
+
               <div className="mt-auto pt-2">
-                <motion.div 
+                <motion.div
                   className="flex items-center text-primary font-medium"
                   variants={arrowVariants}
                 >
