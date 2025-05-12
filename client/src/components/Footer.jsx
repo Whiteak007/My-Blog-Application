@@ -48,14 +48,14 @@ const Footer = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={containerVariants}
-            className="bg-gradient-to-r from-green-200 to-purple-200 text-gray-600 pt-12 px-6 md:px-16 lg:px-24 xl:px-32"
+            className="bg-gradient-to-r from-blue-200 to-pink-200 text-gray-600 pt-12 px-6 md:px-16 lg:px-24 xl:px-32"
         >
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-wrap justify-between gap-12 md:gap-8">
                     {/* Logo and Description */}
                     <motion.div
                         variants={itemVariants}
-                        className="max-w-80"
+                        className="max-w-80 "
                     >
                         <motion.img
                             src={logoDemo}
