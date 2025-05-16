@@ -39,6 +39,7 @@ A full-stack open-source blogging application built with MongoDB, Express, React
 - 🔒 Bcryptjs - Data encryption
 - 🔑 Dotenv - Environment variables
 - 📤 Multer - File uploads
+- ☁️ Cloudinary - Image and file cloud storage
 - 🔗 Slugify - URL-friendly titles
 - ↔️ CORS - Cross-origin resource sharing
 
