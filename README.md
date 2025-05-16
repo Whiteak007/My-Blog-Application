@@ -1,101 +1,115 @@
-MERN BLOG
-Fullstack open source blogging application made with MongoDB, Express, React & Nodejs (MERN)
+# 🚀 MERN BLOG
 
-Configuration and Setup
-Key Features
-Technologies used
-  Frontend
-  Backend
-  Database
-  📸 Screenshots
-  Author
-  License
-  
-Configuration and Setup
-In order to run this project locally, simply fork and clone the repository or download as zip and unzip on your machine.
+![MERN Stack](https://img.shields.io/badge/MERN-Fullstack-blue) 
+![License](https://img.shields.io/badge/License-MIT-green) 
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
 
-Open the project in your prefered code editor.
-Go to terminal -> New terminal (If you are using VS code)
-Split your terminal into two (run the Frontend on one terminal and the Backend on the other terminal)
-In the first terminal
+A full-stack open-source blogging application built with MongoDB, Express, React & Node.js (MERN Stack)
 
-$ cd client
-$ npm install (to install frontend-side dependencies)
-$ npm run  start (to start the frontend)
-In the second terminal
+## 🌟 Features
 
-cd backend and Set environment variables in config.env under ./config
-Create your mongoDB connection url, which you'll use as your MONGO_URI
-Supply the following credentials
-#  ---  Config.env  ---
+- User registration and login
+- JWT Token authentication
+- Story searching functionality
+- CRUD operations (Create, Read, Update, Delete stories)
+- Cloudinary image uploads (user avatars & story images)
+- Like stories and add to Reading List
+- Commenting system
+- Skeleton loading effects
+- Fully responsive design
 
-FRONTEND_URL=http://localhost:5173
-PORT=3000
-MONGODB_CONN="paste your url"
-JWT_SECRET=kdfjief546f54sdjfkasd546sad44f62
-NODE_ENV=development
+## 🛠 Technologies Used
 
-CLOUDINARY_APP_NAME="your cloudnary name"
-CLOUDINARY_API_KEY="your cloudnary API_KEY"
-CLOUDINARY_API_SECRET="your cloudnary API_SECRET"
+### Frontend
+- ⚛️ React.js - JavaScript library for building user interfaces
+- 🔄 React Hooks - State management
+- 🛣 react-router-dom - Routing
+- 📡 Axios - API calls
+- 🎨 CSS - Styling
+- ✍️ CKEditor - Rich Text Editor
+- 🆔 UUID - Random ID generation
+- 🖼 React Icons - Icon library
 
-# --- Terminal ---
+### Backend
+- 🟢 Node.js - JavaScript runtime
+- 🚂 Express.js - Server framework
+- 🍃 Mongoose - MongoDB object modeling
+- 🎣 express-async-handler - Async error handling
+- 🔐 jsonwebtoken - Authentication
+- 🔒 Bcryptjs - Data encryption
+- 🔑 Dotenv - Environment variables
+- 📤 Multer - File uploads
+- 🔗 Slugify - URL-friendly titles
+- ↔️ CORS - Cross-origin resource sharing
 
-$ npm install (to install backend-side dependencies)
-$ npm start (to start the backend)
+### Database
+- 🍃 MongoDB - NoSQL database
 
-Key Features
-User registration and login
-Authentication using JWT Tokens
-Story searching
-CRUD operations (Story create, read, update and delete)
-Upload user ımages and story ımages to the cloudnary server
-Liking stories and adding stories to the Reading list
-Commenting on the story
-Skeleton loading effect
-Responsive Design
+## 🚀 Getting Started
 
-Technologies used
-This project was created using the following technologies.
+### Prerequisites
+- Node.js installed
+- MongoDB account (for database)
+- Cloudinary account (for image storage)
 
-Frontend
-React js - JavaScript library that is used for building user interfaces specifically for single-page applications
-React Hooks - For managing and centralizing application state
-react-router-dom - To handle routing
-axios - For making Api calls
-Css - For User Interface
-CK-Editor - Rich Text Editor
-uuid - For random id generator
-React icons - Small library that helps you add icons to your react apps.
+### Installation
 
-Backend
-Node js -A runtime environment to help build fast server applications using JS
-Express js -The server for handling and routing HTTP requests
-Mongoose - For modeling and mapping MongoDB data to JavaScript
-express-async-handler - Simple middleware for handling exceptions inside of async express routes and passing them to your express error handlers
-jsonwebtoken - For authentication
-Bcryptjs - For data encryption
-Dotenv - Zero Dependency module that loads environment variables
-multer - Node.js middleware for uploading files
-slugify - For encoding titles into a URL-friendly format
-cors - Provides a Connect/Express middleware
-Database
-MongoDB - It provides a free cloud service to store MongoDB collections.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/mern-blog.git
+   cd mern-blog
+2. **Set Up Backend**
+   ```bash
+   cd backend
+   npm install
+3. **Configure Environment Variables**
+   Create a config.env file in backend/config with:
+   ```bash
+    FRONTEND_URL=http://localhost:5173
+    PORT=3000
+    MONGODB_CONN="your-mongodb-uri"
+    JWT_SECRET="your-secret-key"
+    NODE_ENV=development
 
-Author
-Portfolio: https://ankit-3d-portfolio.vercel.app/
-Github: https://github.com/Whiteak007
-Sponsor: Pratham Sarankar
-Linkedin: https://www.linkedin.com/in/ankit-bhagata/
-Email: ankitbhagata@gmail.com
+    CLOUDINARY_APP_NAME="your-cloudinary-name"
+    CLOUDINARY_API_KEY="your-api-key"
+    CLOUDINARY_API_SECRET="your-api-secret"
+4. **Start your Server**
+   ```bash
+   npm start
+5. **Set up Frontend**
+   ```bash
+   cd client
+   npm install
+   npm run dev
+6. **Access the Application**
+   ```bash
+   //Open your browser and visit:
+      Frontend: http://localhost:5173
+      Backend: http://localhost:3000
+7. **👨‍💻 Author**
+    Ankit Bhagata
 
-License
-MIT License
+    🌐 Portfolio: https://ankit-3d-portfolio.vercel.app/
 
-Copyright (c) 2025 Coderak_
+    💻 GitHub: https://github.com/Whiteak007
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    🔗 LinkedIn: https://www.linkedin.com/in/ankit-bhagata/
+   
+    🔗 Sponsor: Pratham Sarankar
+   
+   
+9. **📜 License**
+      This project is licensed under the MIT License - see the LICENSE file for details.
+   
+   
+11. **Copyright (c) 2025 Coderak_**
+    
+       Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    ✉️ Email: ankitbhagata@gmail.com
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
