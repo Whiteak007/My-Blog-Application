@@ -1,4 +1,4 @@
-# 🚀 MERN BLOG
+# 🚀 BLOGVERSE
 
 ![MERN Stack](https://img.shields.io/badge/MERN-Fullstack-blue) 
 ![License](https://img.shields.io/badge/License-MIT-green) 
