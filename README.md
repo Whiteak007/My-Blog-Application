@@ -57,8 +57,8 @@ A full-stack open-source blogging application built with MongoDB, Express, React
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/mern-blog.git
-   cd mern-blog
+   https://github.com/Whiteak007/My-Blog-Application.git
+   cd My-Blog-Application
 2. **Set Up Backend**
    ```bash
    cd backend
