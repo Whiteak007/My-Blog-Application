@@ -9,7 +9,7 @@ const CommentCount = ({ props }) => {
     })
 
     return (
-        <button type='button' className='flex justify-between items-center gap-1'>
+        <button type='button' className='flex justify-between items-center gap-1 cursor-pointer'>
             <FaRegComment />
             {data && data.commentCount}
         </button>
