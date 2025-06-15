@@ -27,22 +27,25 @@ const Index = () => {
     if (loading) return <Loading />;
 
     return (
-        <motion.div
-            variants={containerAnimation}
-            initial="initial"
-            animate="animate"
-            className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10"
-        >
-            {blogData && blogData.blog.length > 0 ? (
-                blogData.blog.map(blog => (
-                    <motion.div key={blog._id} variants={cardAnimation}>
-                        <BlogCard props={blog} />
-                    </motion.div>
-                ))
-            ) : (
-                <div className="text-gray-500 py-5 text-center">No blogs found.</div>
-            )}
-        </motion.div>
+        <div>
+            <h1 className='text-purple-600 font-extrabold text-4xl mb-4 underline'>Top Recent Blogs</h1>
+            <motion.div
+                variants={containerAnimation}
+                initial="initial"
+                animate="animate"
+                className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10"
+            >
+                {blogData && blogData.blog.length > 0 ? (
+                    blogData.blog.map(blog => (
+                        <motion.div key={blog._id} variants={cardAnimation}>
+                            <BlogCard props={blog} />
+                        </motion.div>
+                    ))
+                ) : (
+                    <div className="text-gray-500 py-5 text-center">No blogs found.</div>
+                )}
+            </motion.div>
+        </div>
     );
 };
 

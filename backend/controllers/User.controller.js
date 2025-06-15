@@ -12,7 +12,7 @@ export const getUser = async (req, res, next) => {
         }
         res.status(200).json({
             success: true,
-            message: 'User data found.',
+            message: 'User data found.',    
             user
         })
     } catch (error) {
